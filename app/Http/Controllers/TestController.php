@@ -27,4 +27,9 @@ class TestController extends Controller
         ];
         return view('test.notas', compact('notas'));
     }
+    public function  inicio()
+    {
+
+        return view('welcome');
+    }
 }

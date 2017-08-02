@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('home','TestController@inicio');
 
 Route::get('ola/{nome}', 'TestController@index');
 
 Route::get('notas', 'TestController@notas');
+
+Route::get('posts', 'PostController@showPost');

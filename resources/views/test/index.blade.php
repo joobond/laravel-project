@@ -6,6 +6,6 @@
     <title>Olá</title>
 </head>
 <body>
-    <h1>Olá, João Roberto</h1>
+    <h1>Olá, {{ $nome }}</h1>
 </body>
 </html>

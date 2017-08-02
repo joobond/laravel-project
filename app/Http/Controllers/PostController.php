@@ -9,14 +9,11 @@ use App\Http\Controllers\Controller;
 
 class PostController extends Controller
 {
-   public function showPost()
-   {
-       $posts = [
-         0 => 'Boas Vindas!',
-         1 => 'Como falar conosco?',
-         2 => 'Ação social no bairro Nova União',
-       ];
 
-       return view('test.posts', compact('posts'));
+    public function index()
+   {
+       $posts = \App\Post::all();
+
+       return view('posts.index', compact('posts'));
    }
 }

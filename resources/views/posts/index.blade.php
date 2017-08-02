@@ -7,10 +7,12 @@
 @section('content')
    <h1>Posts Recentes</h1>
    <p>Esta área é para mostrar os post recentes do Blog do Bond =)</p>
-   <hr>
+   <br>
    <ul>
        @foreach($posts as $post)
-       <li>{{$post}}</li>
+       <h2>{{$post->title}} <i>{{$post->created_at}}</i></h2>
+           <p>{{$post->content}}</p>
+           <hr>
        @endforeach
    </ul>
 @stop

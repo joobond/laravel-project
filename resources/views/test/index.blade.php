@@ -1,11 +1,9 @@
-<!doctype htlm>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta author="João Roberto Bond da Silva">
+@extends('template')
+
+@section('title')
     <title>Olá</title>
-</head>
-<body>
-    <h1>Olá, {{ $nome }}</h1>
-</body>
-</html>
+@stop
+
+@section('content')
+    <h1>Olá, {{$nome}}</h1>
+@stop

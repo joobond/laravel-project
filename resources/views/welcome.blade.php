@@ -39,7 +39,7 @@
         <div class="container">
             <div class="content">
                 <div class="title">Blog do Bond</div>
-                <buton><a href="{{'posts'}}" style="font-size: 25px">Posts</a></buton>
+                <buton><a href="{{'blog'}}" style="font-size: 25px">Posts</a></buton>
             </div>
         </div>
     </body>

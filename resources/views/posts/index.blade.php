@@ -15,7 +15,7 @@
 
             <h3 style="color: #843534"><b>Comments</b></h3>
        @foreach($post->comments as $comment)
-           <b>Name: </b>{{$comment->name}}, {{$comment->email}}<br>
+           <b>Name: </b>{{$comment->name}}, <i>{{$comment->email}}</i><br>
            <b>Comment: </b>{{$comment->comment}}<br>
            <hr>
        @endforeach
